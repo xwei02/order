@@ -5,17 +5,17 @@ import org.graalvm.compiler.core.common.type.ArithmeticOpTable;
 public class Order {
     int amount;
     Delivery delivery;
-    int shipFee;
+    int shipFeed;
 
-    public Order(int amount, Delivery delivery, int shipFee) {
+    public Order(int amount, Delivery delivery) {
         this.amount = amount;
         this.delivery = delivery;
-        this.shipFee = delivery.price;
+        this.shipFeed = delivery.price;
 
     }
 
     public int total() {
-        return amount+shipFee;
+        return amount+shipFeed;
 
     }
 }
