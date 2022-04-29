@@ -10,12 +10,12 @@ public class Order {
     public Order(int amount, Delivery delivery, int shipFee) {
         this.amount = amount;
         this.delivery = delivery;
-        this.shipFee = shipFee;
+        this.shipFee = delivery.price;
 
     }
 
     public int total() {
-        if (delivery instanceof )
+        return amount+shipFee;
 
     }
 }
